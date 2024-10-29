@@ -20,6 +20,10 @@ body,html {
 a:hover {
     text-decoration: none
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
 ul li {
     list-style: none
@@ -32,4 +36,135 @@ img {
 h1,h2,h3,h4,h5,h6 {
     font-weight: inherit;
     font-size: inherit
+}
+
+.header {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #041624;
+  z-index: 5;
+}
+.header__content {
+    padding: 15px 0;
+}
+._container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  .menu__link {
+   font-size: 12px;
+  }
+  .menu__buttons {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .menu__btn {
+    align-items: center;
+    border: 1px solid #0098FD;
+    background-color: #0098FD;
+  }
+  .btn {
+    border-radius: 26px;
+    padding: 5px 45px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .logo__img {
+    height: 21px;
+  }
+  .header__logo {
+    position: absolute;
+    left: 60px;
+  } 
+   .header__button {
+    position: absolute;
+    right: 60px;
+  }
+
+  .initial__block {
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+  }
+  .initial__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+  }
+
+
+.initial__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+  z-index: 2;
+  margin-top: 260px;
+}
+
+.initial__content h2 {
+  font-size: 55px;
+  padding: 0 30px;
+}
+.initial__content p {
+    font-size: 25px;
+    margin-left: 6px;
+    padding: 0 30px;
+}
+
+.initial__links {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+.initial__link {
+    border: 1px solid #0098FD;
+    background-color: #0098FD;
+    padding: 10px 45px;
+}
+
+.transparent__btn {
+    padding: 10px 45px;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.upper__footer {
+    margin-top:auto;
+}
+
+.upper__footer__list {
+    background: linear-gradient(rgba(4, 22, 36, 0.7), rgba(4, 22, 36, 0.7));
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.zen__dots {
+    font-size: 18px;
 }
