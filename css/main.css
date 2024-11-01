@@ -1,3 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('..fonts/Montserrat Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zen Dots';
+  src: url('../fonts/ZenDot.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-display: swap;
+  src: url(../fonts/SFProDisplay-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-display: swap;
+  src: url(../fonts/SFProDisplay-Light.woff2) format("woff2"),;
+  font-weight: 300;
+  font-style: normal
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url(../fonts/RobotoRegular.woff) format("woff2"),;
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url(../fonts/Roboto-Medium.woff) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-display: swap;
+  src: url(../fonts/SFProDisplay-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-display: swap;
+  src: url(../fonts/SFProDisplay-Semibold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-display: swap;
+  src: url(../fonts/SFProDisplay-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal
+}
+
+.zen__dots {
+  font-family: 'Zen Dots';
+}
+.sf__pro {
+  font-family: "SF Pro Display";
+  font-weight: 300;
+}
+.roboto__regular {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.sf__pro__medium {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+.sf__pro__semibold {
+  font-family: "SF Pro Display";
+  font-weight: 600;
+}
+.sf__pro__bold {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+}
+.sf__pro__regular {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
 * {
     padding: 0;
     margin: 0;
@@ -38,6 +133,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: inherit
 }
 
+
 .header {
 position: absolute;
   top: 0;
@@ -63,8 +159,11 @@ position: absolute;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    
   }
-
+  .menu__item .sf__pro {
+    font-size: 13px;
+  }
   .menu__item:not(:last-child) {
     margin-right: 100px;
   }
@@ -161,8 +260,12 @@ position: absolute;
 
 .upper__footer__list {
     background: linear-gradient(rgba(4, 22, 36, 0.7), rgba(4, 22, 36, 0.7));
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
+}
+
+.upper__footer__list:first-child {
+  margin-right: auto;
 }
 
 .zen__dots {
@@ -176,7 +279,8 @@ position: absolute;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 0 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .cards__about {
@@ -188,7 +292,9 @@ position: absolute;
 }
 
 .cards__text {
+  margin-top: 20px;
   font-size: 18px;
+  margin-left: auto;
 }
 .cards__carusel {
   display: flex;
@@ -244,7 +350,8 @@ font-weight: 400;
 
 
 .about__block {
-  padding: 0 30px;
+  margin-top: 100px;
+  margin-left: 60px;
   display: grid;
   grid-template-columns: repeat(12, 1fr); 
   grid-template-rows: auto 2fr 1fr; 
@@ -275,7 +382,7 @@ font-weight: 400;
 
 .delivers__block {
   position: relative;
-  margin: 0 30px;
+  margin: 0 60px;
   height: 489px;
   color: #fff;
 } 
@@ -310,7 +417,8 @@ font-weight: 400;
 .products__block {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  margin-left: 60px;
+
 }
 
 .products__title__block {
@@ -337,7 +445,7 @@ font-size: 60px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 15px;
-  width: 462px;
+  width: 459px;
   height: 307px;
   background-color: #F5F5F7;
   border-radius: 15px;
@@ -371,22 +479,32 @@ font-size: 60px;
   grid-row: 1/3;
 }
 
+.products__card__1 .product__card__content {
+  grid-column: 1/8;
+}
+
 .products__card__2 {
-  width: 409px;
+  width: 406px;
 }
 
 .products__card__2 img {
   grid-row: 1/3;
-  grid-column: 6/12;
+  grid-column: 8/12;
+}
+.products__card__2 .product__card__content {
+  grid-column: 1/8;
 }
 
 .products__card__3 {
-  width: 409px;
+  width: 406px;
+}
+.products__card__3 .product__card__content {
+  grid-column: 1/8;
 }
 
 .products__card__3 img {
   grid-row: 1/3;
-  grid-column: 6/12;
+  grid-column: 8/12;
 }
 
 .product__card__btn {
@@ -411,7 +529,7 @@ font-size: 60px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-left: 30px;
+  /* padding-left: 30px; */
   padding-top: 100px;
 }
 
@@ -460,11 +578,17 @@ font-size: 60px;
   margin-bottom: 100px;
 }
 
+.advantages__block {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .advantages__block h1 {
   font-size: 60px;
 }
 .advantages__content {
   display: flex;
+  gap: 15px;
 }
 .adavantages__card {
   width: 302px;
@@ -507,11 +631,15 @@ font-size: 60px;
 }
 
 .contact__us {
-  margin-top: 20px;
+ margin-top: 40px;
   position: absolute;
   left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
 }
-
+.contact__us a {
+  width: 126px;
+}
 .footer {
   background-color: #041624;
   height: 948px;
@@ -525,9 +653,10 @@ font-size: 60px;
 .keep {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 50px;
   width: 1318px;
   height: 333px;
+  padding: 0 60px;
+  margin: 100px auto;
 }
 
 .keep__block {
@@ -546,6 +675,9 @@ font-size: 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  color: #FFFFFF;
 }
 
 .footer__img__cont {
@@ -574,4 +706,134 @@ font-size: 60px;
   background-size: cover;
   z-index: 1;
   grid-column: 6/12;
+}
+
+.keep__content h1 {
+  font-size: 29px;
+}
+.keep__content p {
+  font-size: 17.38px;
+}
+
+.about__foooter {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.about__footer__block {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about__footer__block_3 img {
+  height: 69px;
+  width: 185px;
+}
+
+.styled-line {
+  border: none;            
+  border-top: 2px solid #2F2F2F; 
+  width: 100%;             
+  margin: 20px auto;      
+  opacity: 0.7;          
+}
+
+.footer__reserved {
+margin-top: 50px;
+text-align: right;
+}
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #73757B;
+  margin-left: 27px;
+  font-size: 11px;
+}
+
+.footer__policy ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.about__footer__block h1 {
+  font-size: 29px;
+}
+
+.about__footer__block p {
+  font-size: 16.38px;
+}
+.footer__reserved {
+  font-size: 12.52px;
+}
+
+.card__h1 {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+.card__p {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.product__card__content h1 {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+.product__card__content p {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.product__coal__content h1 {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+.product__coal__content p {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.adavantages__card h3 {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+}
+
+.adavantages__card p {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.about__footer__block h1 {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.about__footer__block p { 
+  font-family: "SF Pro Display";
+  font-weight: 300;
+}
+
+.roboto__medium {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.initial__link {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.card__btn {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+
+.callback__btn  {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+.footer__policy {
+  margin-top: 30px;
 }
