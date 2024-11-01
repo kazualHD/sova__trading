@@ -223,16 +223,17 @@ position: absolute;
   color: #fff;
   z-index: 2;
   margin-top: 260px;
+  
 }
 
 .initial__content h2 {
   font-size: 55px;
-  padding: 0 30px;
+  margin-left: 60px;
 }
 .initial__content p {
     font-size: 25px;
     margin-left: 6px;
-    padding: 0 30px;
+    margin-left: 60px;
 }
 
 .initial__links {
@@ -240,12 +241,16 @@ position: absolute;
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0 30px;
+    margin-left: 60px;
+}
+.initial__links .initial__link {
+  width: 80px;
 }
 .initial__link {
     border: 1px solid #0098FD;
     background-color: #0098FD;
     padding: 10px 45px;
+    position: relative;
 }
 
 .transparent__btn {
@@ -260,7 +265,7 @@ position: absolute;
 
 .upper__footer__list {
     background: linear-gradient(rgba(4, 22, 36, 0.7), rgba(4, 22, 36, 0.7));
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -391,18 +396,22 @@ padding-left: 10px
 
 .delivers__block {
   width: 1326px;
-  position: relative;
-  margin: 0 60px;
-  height: 489px;
-  color: #fff;
+    position: relative;
+    margin: 0 60px;
+    height: 389px;
+    color: #fff;
+    border: 1px solid #0098FD;
+    border-radius: 15px;
+    overflow: hidden;
 } 
-.delivers__block img {
+.delivers__block > img {
   z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 389px;
 }
 
  .delivers__content {
@@ -423,6 +432,7 @@ padding-left: 10px
 
 .delivers__p {
   font-size: 17.38px;
+  line-height: 1.5;
 }
 
 .products__block {
@@ -692,7 +702,7 @@ font-size: 60px;
 .keep__block {
   position: relative;
 }
-.keep__block img {
+.keep__block > img {
   /* z-index: -1; */
   position: absolute;
   top: 0;
@@ -776,8 +786,10 @@ font-size: 60px;
 }
 
 .footer__reserved {
-margin-top: 50px;
-text-align: right;
+  margin-left: 60px;
+  margin-top: 50px;
+  text-align: right;
+  width: 1318px;
 }
 .footer__policy {
   display: flex;
@@ -872,4 +884,39 @@ text-align: right;
 }
 .footer__policy {
   margin-top: 30px;
+}
+
+.upper__footer__list li:first-child {
+  padding-left: 50px;
+}
+
+.upper__footer__list li:last-child {
+  padding-right: 100px;
+}
+
+.delivers__btn {
+  position: relative;
+}
+.arrow__img {
+  z-index: 1;
+  width: 28px;
+  height: 29px;
+  position: absolute;
+  left: 65%;
+  bottom: 10%;
+}
+
+.product__more__svg {
+  width: 109px;
+  height: 85px;
+  align-self: center;
+  padding-left: 150px;
+}
+
+.products {
+  margin-top: 100px
+}
+.products__svg {
+  margin-left: 10px;
+  margin-top: 5px;
 }
