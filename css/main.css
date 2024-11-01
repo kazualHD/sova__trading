@@ -920,3 +920,39 @@ font-size: 60px;
   margin-left: 10px;
   margin-top: 5px;
 }
+
+.news__buttons {
+  text-align: right;
+}
+
+.news__buttons button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* .news__control.swiper-button-disabled{
+  color: #6e6e73;
+  border: 2px solid #6e6e73;
+}
+
+.news__control_prev {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-right: 10px;
+}
+
+.news__control {
+  width: 53px;
+  height: 53px;
+  font-size: 22px;
+  color: #fff;
+  background-color: inherit;
+}
+._icon-chevron-2:before {
+  content: "\e904";
+} */
