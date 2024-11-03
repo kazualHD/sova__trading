@@ -145,10 +145,6 @@ position: absolute;
 .header__content {
     padding: 15px 0;
 }
-._container {
-    max-width: 1170px;
-    margin: 0 auto;
-}
 .header__menu {
     display: flex;
     justify-content: space-between;
@@ -201,14 +197,15 @@ position: absolute;
   }
 
   .initial__block {
-    height: 808px;
+    height: 100vh;
     display: flex;
     flex-direction:column;
+
   }
   .initial__img {
       position: absolute;
       width: 100%;
-      height: 808px;
+      height: 100vh;
       top: 0;
       left: 0;
       object-fit: cover;
@@ -278,14 +275,19 @@ position: absolute;
 }
 
 .cards {
-  margin-top: 100px;
+  
+  background-color: #F0F0F0;
 }
+
 .cards__block {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-left: 60px;
   margin-right: 60px;
+  max-width: 1326px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .cards__about {
@@ -304,6 +306,14 @@ position: absolute;
 .cards__carusel {
   display: flex;
   gap: 15px;
+  /* overflow: hidden;
+  transition: left 0.5s ease; 
+  position: relative;  */
+  transition: transform 0.5s ease; /* Плавный переход для слайдера */
+  will-change: transform; /* Подсказка для браузера о том, что это свойство будет изменяться */
+  overflow: hidden;
+  position: relative;
+
 }
 
 .card {
@@ -364,12 +374,15 @@ padding-left: 10px
 
 
 .about__block {
-  margin-top: 100px;
-  margin-left: 60px;
+  /* margin-top: 100px;
+  margin-left: 60px; */
   display: grid;
   grid-template-columns: repeat(12, 1fr); 
   grid-template-rows: auto 2fr 1fr; 
   gap: 20px; 
+  max-width: 1326px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .about__title {
@@ -387,7 +400,7 @@ padding-left: 10px
 }
 
 .callback__describe__block {
-  grid-column: 7/12; 
+  grid-column: 7/13; 
   grid-row: 2; 
   display: flex;
   flex-direction: column;
@@ -397,12 +410,14 @@ padding-left: 10px
 .delivers__block {
   width: 1326px;
     position: relative;
-    margin: 0 60px;
+    /* margin: 0 60px; */
     height: 389px;
     color: #fff;
     border: 1px solid #0098FD;
     border-radius: 15px;
     overflow: hidden;
+    max-width: 1326px;
+    margin: 0 auto;
 } 
 .delivers__block > img {
   z-index: -1;
@@ -438,8 +453,10 @@ padding-left: 10px
 .products__block {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
-
+  /* margin-left: 60px; */
+  max-width: 1326px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .products__title__block {
@@ -536,6 +553,8 @@ font-size: 60px;
   display: flex;
   margin-top: 15px;
   gap: 13px;
+  background: linear-gradient(transparent 27%,#F2F2F2 12%);
+  z-index: -1;
 }
 
 .product__more__description {
@@ -600,19 +619,23 @@ font-size: 60px;
 }
 
 .advantages {
-  margin-bottom: 100px;
+  background-color: #F0F0F0;
+  padding-bottom: 100px;
+  position: relative;
 }
 
 .advantages__block {
   /* margin-left: 60px;
   margin-right: 60px; */
-  margin: 40px 60px;
+  /* margin: 40px 60px; */
+  max-width: 1326px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .advantages__block h1 {
   font-size: 60px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 40px;;
 }
 .advantages__content {
   display: flex;
@@ -633,14 +656,20 @@ font-size: 60px;
   margin: 0 auto;
 }
 
+.adavantages__card__1 {
+  background-color: #FFFFFF;
+}
 .adavantages__card__2 {
   width: 325px;
+  background-color: #FFFFFF;
 }
 .adavantages__card__3 {
   width: 325px;
+  border: none;
 }
 .adavantages__card__4{
   width: 325px;
+  background-color: #FFFFFF;
 }
 
 .adavantages__card__1 img {
@@ -691,12 +720,13 @@ font-size: 60px;
 .keep {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  width: 1318px;
+  /* width: 1318px; */
   height: 333px;
-  margin: 100px 60px;
   border: 1px solid #030F19;
   border-radius: 15px;
   overflow: hidden;
+  max-width: 1326px;
+  margin: 100px auto;
 }
 
 .keep__block {
@@ -727,12 +757,13 @@ font-size: 60px;
 }
 
 .footer__img {
-  width: 100%;
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
+  height: 924px;
+  width: 100%;
 }
 .keep__block_1 {
  background-color: #030F19;
@@ -763,8 +794,10 @@ font-size: 60px;
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   width: 1318px;
+  max-width: 1326px;
+  margin: 0 auto; 
 }
 .about__footer__block {
   display: flex;
@@ -786,18 +819,21 @@ font-size: 60px;
 }
 
 .footer__reserved {
-  margin-left: 60px;
-  margin-top: 50px;
   text-align: right;
   width: 1318px;
+  max-width: 1326px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 .footer__policy {
   display: flex;
   flex-direction: column;
   gap: 7px;
   color: #73757B;
-  margin-left: 54px;
+  /* margin-left: 54px; */
   font-size: 11px;
+  max-width: 1326px;
+  margin: 0 auto;
 }
 
 .footer__policy ul li {
@@ -914,7 +950,7 @@ font-size: 60px;
 }
 
 .products {
-  margin-top: 100px
+  margin-top: 100px;
 }
 .products__svg {
   margin-left: 10px;
@@ -922,37 +958,58 @@ font-size: 60px;
 }
 
 .news__buttons {
-  text-align: right;
+ text-align:right;
 }
-
 .news__buttons button {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-/* .news__control.swiper-button-disabled{
-  color: #6e6e73;
-  border: 2px solid #6e6e73;
+.product__more::before,
+.product__more::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100vmax; /* Делаем ширину, превышающую видимую часть */
+  background-color: #F0F0F0; /* Цвет для боков */
+  z-index: -1; /* Отправляем их на задний план */
+  height: 282px;
+ 
 }
 
-.news__control_prev {
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  margin-right: 10px;
+.product__more::before {
+  left: -100vmax; /* Сдвигаем левый блок за левую границу */
+  margin-left: 1px;
 }
 
-.news__control {
-  width: 53px;
-  height: 53px;
-  font-size: 22px;
-  color: #fff;
-  background-color: inherit;
+.product__more::after {
+  right: -100vmax; /* Сдвигаем правый блок за правую границу */
+  margin-right: 1px;
 }
-._icon-chevron-2:before {
-  content: "\e904";
-} */
+
+
+body {
+  overflow-x: hidden;
+}
+
+ .about {
+  position: relative;
+  overflow: hidden;
+ }
+.big__sova {
+  position: absolute;
+  width: 983px;
+  height: 1450px;
+  left: 40%;
+  bottom: -19%;
+}
+
+.advantages__btn {
+  background-color: #2A2A2B;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 109px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
