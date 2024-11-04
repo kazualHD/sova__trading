@@ -7,7 +7,6 @@
     <title>sova trading</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/carusel.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,29 +20,29 @@
             </div>
                 <ul class="menu__list roboto__regular">
                  <li class="menu__item">
-                    <a class="menu__link" href="">SERVICES</a>
+                    <a class="menu__link" href="#services">SERVICES</a>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="">ABOUT</a>
+                    <a class="menu__link" href="#about">ABOUT</a>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="">PRODUCTS</a>
+                    <a class="menu__link" href="#products">PRODUCTS</a>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="">ADVANTAGES</a>
+                <a class="menu__link" href="#advantages">ADVANTAGES</a>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="">CONTACTS</a>
+                    <a class="menu__link" href="#contacts">CONTACTS</a>
                 </li>
             </ul>
           </nav>
 
           <div class="menu__buttons header__button">
-           <a href="" class="menu__btn btn"> Contact sales</a>
+           <a href="#contacts" class="menu__btn btn"> Contact sales</a>
           </div>
 
         </div>
@@ -52,15 +51,15 @@
 
      <main class="page">
 
-        <section class="initial">
+        <section id="initial" class="initial">
             <div class="initial__block">
                 <img class="initial__img" src="./img/versions/HEAD_1.jpg" alt="">
                 <div class="initial__content">
                     <h2 class="initial__title sf__pro__bold">Hight-quality petroleum products <br> Worldwide shipping</h2>
                     <p class="initial__text sf__pro__regular ">Delivering high-quality petroleum products with efficient <br> tanker transportation solutions</p>
                     <div class="initial__links">
-                        <a class="initial__link btn" href="">Explore <img class="arrow__img " src="./img/icons/arrow.svg" alt=""> </a>
-                        <a class="btn transparent__btn roboto__medium " href="">Contacts</a>
+                        <a class="initial__link btn" type="button" onclick="showPopup()">Explore <img class="arrow__img " src="./img/icons/arrow.svg" alt=""> </a>
+                        <a class="btn transparent__btn roboto__medium " href="#contacts">Contacts</a>
                     </div>
                     
                     <div class="upper__footer">
@@ -77,7 +76,7 @@
             </div>
             
         </section>
-        <section class="cards">
+        <section id="services" class="cards">
           <div class="cards__block ">
             <div class="cards__about">
                 <h2 class="cards__title sf__pro__semibold ">Commodity Trading <br> & Worldwide Logistic</h2>
@@ -90,8 +89,8 @@
                         <img src="./img/versions/SeaTankers.jpg" alt="">
                     </div>
                     <h1 class="card__h1">Sea Tankers Transportation</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA provides reliable and secure sea tanker transportation for petroleum products, petrochemicals, and liquefied gases.</p>
+                    <a type="button" onclick="showPopup()" class="card__btn btn">EXPLORE</a>
                 </div>
             
                 <div class="card__2__carusel card ">
@@ -99,8 +98,8 @@
                         <img src="./img/versions/SupplyProducts.jpg" alt="">
                     </div>
                     <h1 class="card__h1">Supply Of Petroleum Products</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA specializes in the efficient supply of high-quality petroleum products, including gasoline, diesel, and fuel oil.</p>
+                    <a type="button" onclick="showPopup()" class="card__btn btn" >EXPLORE</a>
                 </div>
             
                 <div class="card__3__carusel card ">
@@ -108,8 +107,8 @@
                         <img src="./img/versions/OilProducts.jpg" alt="">
                     </div>
                     <h1 class="card__h1">Oil & Petroleum Product Trading</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA offers comprehensive trading solutions for crude oil and refined petroleum products. We provide competitive pricing and reliable sourcing.</p>
+                    <a onclick="showPopup()" type="button" class="card__btn btn" >EXPLORE</a>
                 </div>
             
                 <div class="card__4__carusel card ">
@@ -117,8 +116,8 @@
                         <img src="./img/versions/LPG Trading.jpg" alt="">
                     </div>
                     <h1 class="card__h1">LPG Trading</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA is a trusted provider in LPG trading, supplying liquefied petroleum gas for residential, commercial, and industrial use.</p>
+                    <a onclick="showPopup()" type="button" class="card__btn btn" >EXPLORE</a>
                 </div>
             
                 <div class="card__5__carusel card ">
@@ -126,8 +125,8 @@
                         <img src="./img/versions/Coal Trading.jpg" alt="">
                     </div>
                     <h1 class="card__h1">Coal Trading</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA provides reliable coal trading solutions to meet the energy needs of power plants and industrial clients worldwide.</p>
+                    <a onclick="showPopup()" type="button" class="card__btn btn" >EXPLORE</a>
                 </div>
             
                 <div class="card__6__carusel card ">
@@ -135,8 +134,8 @@
                         <img src="./img/versions/Petrochemicals Supplies.jpg" alt="">
                     </div>
                     <h1 class="card__h1">Petrochemicals Supplies</h1>
-                    <p class="card__p">SOVA specializes in the transportation of petroleum products, petrochemicals, coal, and liquefied gases via tanker vessels.</p>
-                    <a class="card__btn btn" href="">EXPLORE</a>
+                    <p class="card__p">SOVA supplies a wide range of high-quality petrochemicals essential for various industries.</p>
+                    <a onclick="showPopup()" type="button" class="card__btn btn" >EXPLORE</a>
                 </div>
             </div>
             
@@ -148,14 +147,14 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <img class="big__sova" src="./img/icons/big-sova.svg" alt="">
             <div class="about__block">
                 <h1 class="about__title sf__pro__semibold">About Us</h1>
 
                 <div class="callback__block">
                     <p class="callback__p sf__pro__medium">At SOVA, we are committed to providing world-class <br> tanker transportation services for petroleum products, <br> petrochemicals, coal, and liquefied gases. With extensive <br> industry experience and a deep understanding of global <br> logistics, we serve a wide range of clients in the energy <br> sector, ensuring the safe, efficient, and timely transport <br> of essential resources.</p>
-                    <a class="callback__btn btn" href="">CALL BACK</a>
+                    <a onclick="showPopup()"  class="callback__btn btn" >CALLBACK</a>
                 </div>
 
                 <div class="callback__describe__block">
@@ -169,12 +168,12 @@
                     <h1 class="delivers__h1 sf__pro__semibold">delivers petroleum products to over <br> 
                         70+ countries worldwide</h1>
                     <p class="delivers__p sf__pro__regular">With a modern fleet of tankers, we provide safe and timely <br> deliveries to meet the energy needs of industries and markets <br> across the globe.</p>
-                    <a class="initial__link delivers__btn btn" href="">Explore <img class="arrow__img" src="./img/icons/arrow.svg" alt=""> </a>
+                    <a onclick="showPopup()" type="button" class="initial__link delivers__btn btn" >Explore <img class="arrow__img" src="./img/icons/arrow.svg" alt=""> </a>
                 </div>
             </div>
         </section>
 
-        <section class="products">
+        <section id="products" class="products">
             <div class="products__block">
 
                 <div class="products__title__block">
@@ -196,7 +195,7 @@
                             efficient and reliable delivery to <br>
                             meet the fuel needs of markets <br>
                             worldwide.</p>
-                        <a class="card__btn product__card__btn btn" href="">CONTACT US</a>
+                        <a onclick="showPopup()" type="button" class="card__btn product__card__btn btn" >CONTACT US</a>
                      </div>
                      <img src="./img/versions/image 8.png" alt="">
                    </div>
@@ -209,7 +208,7 @@
                            efficient and reliable delivery to <br>
                            meet the fuel needs of markets <br>
                            worldwide.</p>
-                       <a class="card__btn product__card__btn btn" href="">CONTACT US</a>
+                       <a onclick="showPopup()"  class="card__btn product__card__btn btn" >CONTACT US</a>
                     </div>
                     <img src="./img/versions/image 9.png" alt="">
                   </div>
@@ -222,7 +221,8 @@
                            efficient and reliable delivery to <br>
                            meet the fuel needs of markets <br>
                            worldwide.</p>
-                       <a class="card__btn product__card__btn btn" href="">CONTACT US </a>
+                       <a onclick="showPopup()" class="card__btn product__card__btn btn" >CONTACT US </a>
+                       
                     </div>
                     <img src="./img/versions/image 10.png" alt="">
                   </div>
@@ -234,8 +234,8 @@
                     <div class="product__more__content">
                         <h1 class="sf__pro__medium">LPG,Petrochemicals and other products</h1>
                         <p class="sf__pro__regular">With a modern fleet of tankers, we provide safe and timely <br> deliveries to meet the energy needs of industries and markets <br> across the globe.</p>
-                        <a class="card__btn btn" href=""> MORE </a>
-                    </div>
+                        <a class="card__btn btn" onclick="showPopup()" type="button" > MORE </a>
+                    </div>  
                     <img class="product__more__svg" src="./img/icons/coal-wave.svg" alt="">
                  </div>
 
@@ -248,7 +248,7 @@
                               efficient and reliable delivery to <br>
                               meet the fuel needs of markets <br>
                               worldwide.</p>
-                          <a class="card__btn btn" href="">EXPLORE</a>
+                          <a onclick="showPopup()" type="button" class="card__btn btn" >EXPLORE</a>
                       </div>
                  </div>
                 </div>
@@ -256,7 +256,7 @@
             </div>
         </section>
         
-        <section class="advantages">
+        <section id="advantages" class="advantages">
             <div class="advantages__block">
                <h1 class="advantages__title sf__pro__medium">Our Advantages</h1>
                <div class="advantages__content">
@@ -289,9 +289,8 @@
 
                </div>
              </div>
-             <!-- <div class="contact__us"> -->
-             <a class="advantages__btn  btn" href="">CONTACT US</a>
-            <!-- </div> -->
+             <a  class="advantages__btn  btn" type='button' onclick="showPopup() ">CONTACT US</a>
+
         </section>
      </main>
      
@@ -306,7 +305,7 @@
                 <div class="keep__content ">
                     <h1 class="keep__title sf__pro__semibold" >Keep in touch</h1>
                     <p class="keep__text sf__pro__regular" >With a modern fleet of tankers, we provide safe and timely <br> deliveries to meet the energy needs of industries and markets <br> across the globe.</p>
-                    <a class="initial__link delivers__btn btn" href="">Callback <img class="arrow__img " src="./img/icons/arrow.svg" alt=""></a>
+                    <a onclick="showPopup()" type="button" class="initial__link delivers__btn btn" >Callback <img class="arrow__img " src="./img/icons/arrow.svg" alt=""></a>
                 </div>
             </div>
 
@@ -321,7 +320,7 @@
                 <p>Privacy policy</p>
                 <p>Callback</p>    
             </div>
-            <div class="about__footer__block about__footer__block_2 ">
+            <div id="contacts" class="about__footer__block about__footer__block_2 ">
                 <h1>Contact</h1>
                 <p>Email: help@sova.com</p>
                 <p>Location: New York, NY</p>    
@@ -346,19 +345,37 @@
          </div>
         </div>
      </footer>
-    
     </div>
 
-
-
-<!-- 
-
-
-
-
-    
+    <div id="modal" class="popup">
+        <div class="popup__content">
+            <div class="popup__body">
+                <h4 class="popup__title">We will contact you as soon as possible.</h4>
+                <p class="popup__text">Please fill out the feedback form below.</p>
+                <span class="popup__subtitle">Leave your contact information.</span>
+                <form method="post" data-ajax="ajax" class="popup__form" data-message="thank" action="/">
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text" name="name" 
+                            data-error="" data-value="Your name"
+                            class="popup__input input _req"
+                            placeholder="Your name">
+                    </div>
+                    <div class="popup__row inp-box">
+                        <input autocomplete="off" type="text"
+                         name="phone"
+                         data-error=""
+                         data-value="Контактный телефон" 
+                         class="popup__input input _phone _req"
+                         placeholder="Phone">
+                    </div>
+                    <button type="submit" class="popup__btn">Send</button>
+               </form>
+            </div>
+        </div>
+    </div>
     <script src="./js/vendor.min.js"></script>
-    <script src="./js/vendor.min.js"></script> -->
+   <script src="./js/helper.js"></script>
+   <script src="./js/carusel.js"></script>
 </body>
 
 </html>
